@@ -16,7 +16,8 @@
  *
  * CSS version 3
  *
- * Establece estilos genericos para sitio web
+ * Definicion de variables para construir
+ * el sistema de grids y blocks para ResponsiveCat
  *
  * @category Structure
  * @package  Base styles
@@ -25,86 +26,41 @@
  * @version  0.7.0
  * @link     http://responsivecat.com
  */
-/**
- * Reset
- * Reinicia los valores por defecto del margen y padding
+
+ /*
+  * Especificacion de columnas automaticas
+  * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
+  * @author Luis Gdonis <http//ldonis.com>
+  * @since 0.7.0
+  */
+var-columns-automatic-total = 12
+var-columns-automatic-prefix = 'columns-'
+var-columns-automatic-margin = 1
+
+/*
+ * Especificacion de columnas manuales
  * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
  * @author Luis Gdonis <http//ldonis.com>
  * @since 0.7.0
  */
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-body {
-  margin: 0;
-}
-/**
- * Estilo de titulos
- *
- * Establece un valor estandar para los titulos y subtitulos
+var-columns-manual-total = 10
+var-columns-manual-prefix = 'column-'
+var-columns-manual-margin = 1
+
+/*
+ * Especificacion de blocks automaticas
  * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
  * @author Luis Gdonis <http//ldonis.com>
  * @since 0.7.0
  */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-style: inherit;
-  font-weight: inherit;
-  text-rendering: optimizelegibility;
-  margin: 0;
-}
-/* Titulo principal
- * ================================== */
-h1 {
-  font-size: 2.4rem;
-}
-/* Subtitulo
- * ================================== */
-h2 {
-  font-size: 2.2rem;
-}
-/* Subtitulos
- * ================================== */
-h3 {
-  font-size: 2rem;
-}
-h4 {
-  font-size: 1.8rem;
-}
-h5 {
-  font-size: 1.6rem;
-}
-h6 {
-  font-size: 1.4rem;
-}
-/**
- * hr
+var-blocks-automatic-total = 12
+var-blocks-automatic-prefix = 'columns-'
+
+/*
+ * Especificacion de blocks manual
  * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
  * @author Luis Gdonis <http//ldonis.com>
- * @since 0.7.1
+ * @since 0.7.0
  */
-hr {
-  border: 0;
-}
-/**
- * margen por defecto
- * ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~  ~·~
- * @author Luis Gdonis <http//ldonis.com>
- * @since 0.7.1
- */
-p {
-  margin: 0;
-}
+var-blocks-manual-total = 10
+var-blocks-manual-prefix = 'column-'
