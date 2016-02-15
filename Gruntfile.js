@@ -7,12 +7,12 @@ module.exports = function (grunt) {
         copy: {
             main: {
                 files: [
-                    {expand: true, flatten: true, src: ['rcat_modules/rcat-helper/src/*.styl'], dest: 'src/helper', filter: 'isFile'},
+                    {expand: true, flatten: true, src: ['rcat_modules/rcat-helper/core/*.styl'], dest: 'src/helper', filter: 'isFile'},
                     {expand: true, flatten: true, src: ['rcat_modules/rcat-base/src/*.styl'], dest: 'src/base', filter: 'isFile'},
                     {expand: true, flatten: true, src: ['rcat_modules/rcat-grid/src/*.styl'], dest: 'src/grid', filter: 'isFile'},
-                    {expand: true, flatten: true, src: ['rcat_modules/rcat-form/src/*.styl'], dest: 'src/form', filter: 'isFile'},
-                    {expand: true, flatten: true, src: ['rcat_modules/rcat-nav/src/*.styl'], dest: 'src/nav', filter: 'isFile'},
-                    {expand: true, flatten: true, src: ['rcat_modules/rcat-ui/src/*.styl'], dest: 'src/ui', filter: 'isFile'}
+                    {expand: true, flatten: true, src: ['rcat_modules/rcat-form/core/*.styl'], dest: 'src/form', filter: 'isFile'},
+                    {expand: true, flatten: true, src: ['rcat_modules/rcat-nav/core/*.styl'], dest: 'src/nav', filter: 'isFile'},
+                    {expand: true, flatten: true, src: ['rcat_modules/rcat-ui/core/*.styl'], dest: 'src/ui', filter: 'isFile'}
                 ]
             }
         },
